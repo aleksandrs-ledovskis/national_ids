@@ -9,6 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Aleksandrs Ļedovskis"]
   spec.email         = ["aleksandrs@ledovskis.lv"]
   spec.summary       = %q{A library for national identification number related tasks}
+  spec.description   = %q{Collection of national identification number validators and examples}
+  spec.homepage      = "https://github.com/aledovsky/national_ids"
   spec.license       = "BSD-3"
 
   spec.files         = `git ls-files -z`.split("\x0")
@@ -19,5 +21,5 @@ Gem::Specification.new do |spec|
   spec.signing_key   = "certs/gem-private_key.pem"
 
   spec.add_development_dependency "bundler", "~> 1.6"
-  spec.add_development_dependency "rake"
+  spec.add_development_dependency "rake",    "~> 10.3"
 end
