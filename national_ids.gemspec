@@ -15,6 +15,9 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec)/})
   spec.require_paths = ["lib"]
 
+  spec.cert_chain    = ["certs/gem-public_cert.pem"]
+  spec.signing_key   = "certs/gem-private_key.pem"
+
   spec.add_development_dependency "bundler", "~> 1.6"
   spec.add_development_dependency "rake"
 end
